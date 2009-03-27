@@ -1,0 +1,13 @@
+--- w2do-2.2.1/Makefile~	2009-03-27 01:10:59.000000000 +0100
++++ w2do-2.2.1/Makefile	2009-03-27 09:43:07.000000000 +0100
+@@ -23,8 +23,8 @@
+ # Installation directories; feel free to modify according to your taste and
+ # situation:
+ prefix  = /usr/local
+-bindir  = $(prefix)/bin
+-mandir  = $(prefix)/share/man
++bindir  = $(DESTDIR)$(prefix)/bin
++mandir  = $(DESTDIR)$(prefix)/share/man
+ man1dir = $(mandir)/man1
+ 
+ # Make rules;  please do not edit these unless you really know what you are
