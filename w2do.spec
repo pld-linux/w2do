@@ -1,4 +1,5 @@
 Summary:	A commandline todo manager
+Summary(hu.UTF-8):	Parancssoros teendő-nyilvántartó
 Summary(pl.UTF-8):	Konsolowy menadżer rzeczy do zrobienia
 Name:		w2do
 Version:	2.2.1
@@ -17,10 +18,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 w2do is a simple-to-use commandline todo manager. It can export to
 HTML 4.01 Strict and plain text.
 
+%description -l hu.UTF-8
+w2do egy egyszerűen használható parancssoros teendő-nyilvántartó. HTML
+4.01 Strict-be és egyszerű szövegbe tud exportálni.
+
 %description -l pl.UTF-8
 w2do to prosty w użyciu konsolowy menadżer rzeczy do zrobienia.
-Umożliwa eksport do HTML 4.01 Strict jak również do zwykłego
-tekstu.
+Umożliwa eksport do HTML 4.01 Strict jak również do zwykłego tekstu.
 
 %prep
 %setup -q
