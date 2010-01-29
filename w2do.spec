@@ -2,12 +2,12 @@ Summary:	A commandline todo manager
 Summary(hu.UTF-8):	Parancssoros teendő-nyilvántartó
 Summary(pl.UTF-8):	Konsolowy menadżer rzeczy do zrobienia
 Name:		w2do
-Version:	2.2.3
+Version:	2.3.0
 Release:	1
 License:	GPL v3+
 Group:		Applications
 Source0:	http://w2do.googlecode.com/files/%{name}-%{version}.tar.gz
-# Source0-md5:	0d4715753997bb95ae18edbc71ce4b23
+# Source0-md5:	265d9560a64c2591fefd5b80d37186ce
 Patch0:		%{name}-Makefile.patch
 URL:		http://w2do.blackened.cz/
 BuildRequires:	perl-tools-pod
