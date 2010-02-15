@@ -9,9 +9,11 @@ Group:		Applications
 Source0:	http://w2do.googlecode.com/files/%{name}-%{version}.tar.gz
 # Source0-md5:	0914b84c993d426eaeee79d06ac0731c
 Patch0:		%{name}-Makefile.patch
+Patch1:		%{name}-env-perl.patch
 URL:		http://w2do.blackened.cz/
 BuildRequires:	perl-tools-pod
 BuildRequires:	rpm-perlprov
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -29,6 +31,7 @@ Umożliwa eksport do HTML 4.01 Strict jak również do zwykłego tekstu.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 %{__make}
